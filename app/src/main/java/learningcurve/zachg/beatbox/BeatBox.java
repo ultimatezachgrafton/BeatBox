@@ -29,7 +29,7 @@ public class BeatBox {
             Log.e(TAG, "Could not find list assets", ioe);
             return;
         }
-        for (String filename: soundNames) {
+        for (String fileName: soundNames) {
             String assetPath = SOUNDS_FOLDER + "/" + fileName;
             Sound sound = new Sound(assetPath);
             sounds.add(sound);
